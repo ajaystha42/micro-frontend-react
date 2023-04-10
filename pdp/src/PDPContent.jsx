@@ -9,9 +9,7 @@ export default function PDPContent() {
 
   useEffect(() => {
     if (id) {
-      console.log(id);
       getProductById(id).then((prod) => {
-        console.log({ prod });
         setProduct(prod);
       });
     } else setProduct(null);
